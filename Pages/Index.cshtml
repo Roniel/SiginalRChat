@@ -1,0 +1,53 @@
+﻿@page
+<div class="container">
+    <div id="login">
+        <div class="row p-1">
+            <h2>Entrarrr no Chat</h2>
+            <input type="text" id="username" placeholder="Usuário" />
+            <input type="password" id="password" placeholder="Senha" />
+            <button onclick="login()">Entrar</button>
+        </div>
+    </div>
+
+    <div id="chat" style="display:none;">
+        @* <div class="row p-1">
+            <div class="col-1">User</div>
+            <div class="col-5"><input type="text" id="userInput" /></div>
+        </div> *@
+        <div class="row p-1">
+            <div class="col-1">Message</div>
+            <div class="col-5">
+                <input type="text" class="w-100" id="messageInput" />
+            </div>
+        </div>
+        <div class="row p-1">
+            <div class="col-6 text-end">
+                <input type="button" id="sendButton" value="Send Message" />
+            </div>
+        </div>
+        <div class="row p-1">
+                <input id="groupInput" placeholder="Nome do grupo"/>
+        </div>
+        <div class="row p-1">
+            <button id="joinGroup">Entrar no Grupo</button>
+            <button id="sendToGroup">Enviar para Grupo</button>
+        </div>
+        <div class="row p-1">
+            <div class="col-6">
+                <hr />
+            </div>
+        </div>
+        <div class="row p-1">
+            <div class="col-6">
+                <ul id="messagesList"></ul>
+            </div>
+        </div>
+        @* <div class="row p-1"> 
+            <div class="col-6">
+                <ul id="usersConnectList"></ul>
+            </div>
+        </div> *@
+    </div>
+</div>
+<script src="~/js/signalr/dist/browser/signalr.js"></script>
+<script src="~/js/chat.js"></script>
