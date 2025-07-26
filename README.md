@@ -10,6 +10,3 @@ Step
 4 -
 
 libman install @microsoft/signalr@latest -p unpkg -d wwwroot/js/signalr --files dist/browser/signalr.js
-
-
-https://www.datacamp.com/pt/tutorial/deepseek-r1-ollama
